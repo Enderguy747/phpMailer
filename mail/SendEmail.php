@@ -19,18 +19,18 @@ class SendEmail
 
     private $mailFrom;
     private $mailSender;
-    function __construct()
+ function __construct()
     {
         $this->mail       = new  PHPMailer(true);
-        $this->host       ="smtp.gmail.com";
+        $this->host       ="smtp.gmail.com"; // if you are using gmail
         $this->SMTPAuth   =true;
-        $this->Username   ="jo.sed982705@gmail.com";
-        $this->Password   ="suurhixrmssohrwl";
+        $this->Username   ="your email address";
+        $this->Password   ="your password"; //you need to generate a password for applications in gmail 
         $this->SMTPSecure ="TLS";
         $this->Port       =587;
         
-        $this->mailFrom   ="jo.sed982705@gmail.com";
-        $this->mailSender ="Codigo 2 factor";
+        $this->mailFrom   ="your mail *again";
+        $this->mailSender ="your email title";
     }
 
     public function newEmail($mailFrom="", $mailSender="",  $mailFor="", $mailRecipientName="", $mailSubject="", $mailBody="")
