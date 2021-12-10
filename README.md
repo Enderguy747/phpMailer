@@ -15,7 +15,7 @@ just copy the the mail folder in your proyect and change the class as much as yo
         $this->host       ="smtp.gmail.com"; // if you ar using gmail
         $this->SMTPAuth   =true;
         $this->Username   ="your email address";
-        $this->Password   ="your password"; //ypu need to generate a password for applications in gmail 
+        $this->Password   ="your password"; //you need to generate a password for applications in gmail 
         $this->SMTPSecure ="TLS";
         $this->Port       =587;
         
@@ -30,7 +30,7 @@ just copy the the mail folder in your proyect and change the class as much as yo
 ## How to use the class
 
 ```php
-               //crate a send mail object
+               //crate a sendEmail object
                 $sm = new SendEmail();
                 //use the newEmail method and give it the necesary params 
                 $mail = $sm->newEmail("", "", $destinationMail, "Verificacion ", "Su codigo es", "param", "");
