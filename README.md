@@ -12,7 +12,7 @@ just copy the the mail folder in your proyect and change the class as much as yo
  function __construct()
     {
         $this->mail       = new  PHPMailer(true);
-        $this->host       ="smtp.gmail.com"; // if you ar using gmail
+        $this->host       ="smtp.gmail.com"; // if you are using gmail
         $this->SMTPAuth   =true;
         $this->Username   ="your email address";
         $this->Password   ="your password"; //you need to generate a password for applications in gmail 
